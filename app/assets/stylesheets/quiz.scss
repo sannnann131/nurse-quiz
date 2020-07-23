@@ -1,0 +1,44 @@
+body {
+  height: 100vh;
+  background-color: #efdec1;
+}
+
+.container {
+  width: 400px;
+  margin: 8px auto;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.quiz {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.choices {
+  padding: 0;
+  margin-bottom: 16px
+}
+
+.selecter {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.choices > li:hover {
+  background: #f8f8f8;
+}
+
+#button {
+  background-color: #3498db;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 0 #2880b9;
+}
