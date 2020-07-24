@@ -11,17 +11,17 @@ body {
   padding: 16px;
 }
 
-.quiz {
+#question {
   margin-bottom: 16px;
   text-align: center;
 }
 
-.choices {
+#choices {
   padding: 0;
   margin-bottom: 16px
 }
 
-.selecter {
+#choices > li {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
@@ -29,11 +29,11 @@ body {
   cursor: pointer;
 }
 
-.choices > li:hover {
+#choices > li:hover {
   background: #f8f8f8;
 }
 
-#button {
+#btn {
   background-color: #3498db;
   padding: 8px;
   border-radius: 4px;
@@ -41,4 +41,10 @@ body {
   text-align: center;
   color: #ffffff;
   box-shadow: 0 4px 0 #2880b9;
+}
+
+#btn.disabled {
+  background: #ccc;
+  box-shadow: 0 4px 0 #bbb;
+  opacity: 0.7;
 }

@@ -25,47 +25,47 @@ body {
   height:calc(100%- 50px);
 }
 
-.question{
+.quiz{
   border: solid 3px green;
   background-color: yellow;
   margin-top: 50px;
   padding-left: 50px;
 }
 
-.question__info{
+.quiz__info{
   display:flex;
   padding-left:320px;
 }
 
-.question__title {
+.quiz__title {
   font-size: 25px;
   padding-right:50px;
 }
 
-.question__level {
+.quiz__level {
   font-size: 20px;
   padding-right:50px;
 }
 
-.question__ravel {
+.quiz__ravel {
   font-size:20px;
 }
 
-.question__answer {
+.quiz__answer {
   display: flex;
   padding-left:280px;
 }
 
-.question__user {
+.quiz__user {
   font-size: 20px;
   padding-right:50px;
 }
 
-.question__average {
+.quiz__average {
   font-size: 20px;
   padding-right:50px;
 }
 
-.question__ranking {
+.quiz__ranking {
   font-size: 20px;
 }
