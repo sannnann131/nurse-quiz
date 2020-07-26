@@ -4,7 +4,8 @@
   const question = document.getElementById('question');
   const choices = document.getElementById('choices');
   const btn = document.getElementById('btn');
-
+  const result = document.getElementById('result');
+  const scoreLabel = document.querySelector('#result > p');
   const quizSet = [
     {q: '平均寿命で正しいのはどれ？', c: ['0歳の平均余命である', '20歳の平均余命である', '60歳の平均余命である','死亡者の平均年齢である']},
     {q: '2018年の日本人女性の平均寿命はどれ？', c: ['87.32歳', '72.32歳', '77.32歳','82.32歳']},
@@ -14,6 +15,7 @@
   ];
   let currentNum = 0;
   let isAnswered;
+  let score = 0;
 
   function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -31,6 +33,7 @@
 
     if (li.textContent === quizSet[currentNum].c[0]) {
       li.classList.add('correct');
+      score++;
     } else {
       li.classList.add('wrong');
     }
@@ -71,7 +74,12 @@
     }
     btn.classList.add('disabled');
 
-    currentNum++;
-    setQuiz();
+    if (currentNum === quizSet.length - 1) {
+      scoreLabel.textContent = `正解数: ${score} / ${quizSet.length}`;
+      result.classList.remove('hidden');
+    } else {
+      currentNum++;
+      setQuiz();
+    }
   });
 }
