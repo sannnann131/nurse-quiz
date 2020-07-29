@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  width: 400px;
+  width: 600px;
   margin: 8px auto;
   background-color: #ffffff;
   border-radius: 4px;
@@ -66,7 +66,7 @@ body {
 
 #result {
   position: absolute;
-  width: 300px;
+  width: 500px;
   background-color: white;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -83,4 +83,51 @@ body {
 
 #result > p {
   font-size: 24px;
+}
+
+.sosyal {
+  margin: 50px auto;
+}
+.facebook {
+  background-color: #2e4a88;
+  text-shadow: 0 -1px -1px #1B3D82;
+  
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 40px;
+}
+
+.twitter {
+  background-color: #008DDE;
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 40px;
+}
+
+.instagram {
+  background:linear-gradient(to right, #5478f2 0%, #f23f79 60%, orange 100%);
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 40px;
 }
