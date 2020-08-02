@@ -36,6 +36,7 @@ body {
   border: solid 3px green;
   background-color: yellow;
   margin-top: 30px;
+  margin-bottom:60px;
   padding-left: 50px;
 }
 
@@ -75,4 +76,23 @@ body {
 
 .quiz__ranking {
   font-size: 20px;
+}
+
+.exam {
+  border: solid 3px black;
+  background-color: white;
+  text-align: center;
+  font-size:20px;
+  margin-top: 50px;
+  
+}
+
+.exams {
+  text-align:center;
+  font-size:18px;
+  border-left: solid 3px black;
+  border-right: solid 3px black;
+  border-bottom: solid 3px black;
+  background-color: white;
+  line-height: 40px;
 }
