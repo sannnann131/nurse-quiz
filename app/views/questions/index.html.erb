@@ -1,6 +1,4 @@
 <header>
-  <div class=header__user>
-    <%= link_to "ログイン", "#" %>
   </div>
   <div class=header__title>
    素人でも解ける(かもしれない!?)看護師国家試験問題集
@@ -8,7 +6,8 @@
 </header>
 <body>
     <div class=attention>
-      ※問題は全て看護師国家試験の過去問題を基に作成しています。ただし一部問題、選択肢の改変を含みます。
+      ※問題は全て看護師国家試験の過去問題を基に作成しています。ただし一部問題、選択肢の改変を含みます。<br>
+       クイズ回答後正解すると選択肢が緑色に、不正解だと赤色になります。
     </div>
   <div class= quiz>
     <div class = quiz__box>
@@ -21,17 +20,6 @@
         </div>
         <div class=quiz__ravel>
         問題数:５問
-        </div>
-      </div>
-      <div class=quiz__answer>
-        <div class=quiz__user>
-          あなたの正解数：0問
-        </div>
-        <div class=quiz__average>
-          平均正解数:3問
-        </div>
-        <div class=quiz__ranking>
-          <%=link_to "ランキングはこちら", "#" %>
         </div>
       </div>
     </div>
@@ -50,17 +38,6 @@
         問題数:５問
         </div>
       </div>
-      <div class=quiz__answer>
-        <div class=quiz__user>
-          あなたの正解数：0問
-        </div>
-        <div class=quiz__average>
-          平均正解数:3問
-        </div>
-        <div class=quiz__ranking>
-          <%=link_to "ランキングはこちら", "#" %>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -68,7 +45,7 @@
     <div class = quiz__box>
       <div class= quiz__info>
         <div class= quiz__title>
-          <%=link_to "テーマ3:", "quizs3/show" %>
+          <%=link_to "テーマ3:日本の社会保障", "quizs3/show" %>
         </div>
         <div class= quiz__level>
           レベル:2
@@ -77,19 +54,42 @@
         問題数:５問
         </div>
       </div>
-      <div class=quiz__answer>
-        <div class=quiz__user>
-          あなたの正解数：0問
+    </div>
+  </div>
+
+
+    <div class= quiz>
+    <div class = quiz__box>
+      <div class= quiz__info>
+        <div class= quiz__title>
+          <%=link_to "テーマ4:人間の体と役割", "quizs4/show" %>
         </div>
-        <div class=quiz__average>
-          平均正解数:3問
+        <div class= quiz__level>
+          レベル:3
         </div>
-        <div class=quiz__ranking>
-          <%=link_to "ランキングはこちら", "#" %>
+        <div class=quiz__ravel>
+        問題数:５問
         </div>
       </div>
     </div>
   </div>
+
+      <div class= quiz>
+    <div class = quiz__box>
+      <div class= quiz__info>
+        <div class= quiz__title>
+          <%=link_to "テーマ5:人間の病気と症状", "quizs5/show" %>
+        </div>
+        <div class= quiz__level>
+          レベル:3
+        </div>
+        <div class=quiz__ravel>
+        問題数:５問
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <div class=exam>
     看護師国家試験とは・・・
