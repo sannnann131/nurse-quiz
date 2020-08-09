@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'quizs3/show'
   get 'quizs2/show'
   get 'quizs1/show'
   get 'questions/index'

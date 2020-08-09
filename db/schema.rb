@@ -10,32 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_23_174436) do
-
-  create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.text "content", null: false
-    t.bigint "question_id_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["question_id_id"], name: "index_categories_on_question_id_id"
-  end
-
-  create_table "choices", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.text "content", null: false
-    t.boolean "is_answer"
-    t.bigint "question_id_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["question_id_id"], name: "index_choices_on_question_id_id"
-  end
+ActiveRecord::Schema.define(version: 2020_08_09_101813) do
 
   create_table "questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.text "content", null: false
-    t.text "explanation", null: false
-    t.bigint "category_id_id"
+    t.text "question"
+    t.text "choice1"
+    t.text "choice2"
+    t.text "choice3"
+    t.text "choice4"
+    t.text "explanation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["category_id_id"], name: "index_questions_on_category_id_id"
   end
 
 end
