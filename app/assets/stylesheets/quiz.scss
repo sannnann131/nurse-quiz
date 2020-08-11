@@ -1,3 +1,11 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+       -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   background-color: #efdec1;
@@ -19,7 +27,7 @@ body {
 
 #choices {
   padding: 0;
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 #choices > li {
