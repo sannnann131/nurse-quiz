@@ -1,24 +1,23 @@
-# README
+・タイトル
+素人でも解ける(かな？)看護師国家試験クイズ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+・概要
+看護師国家試験の過去問題から、医療従事者でなくとも答えられそうな、あるいは知っておくと便利な問題を抜粋したブラウザ上で動作するクイズアプリ
 
-Things you may want to cover:
+・アプリ制作にあたって使用したフレームワーク、SQL
+ruby  :'2.7.1'
+rails :'5.2.4'
+mysql2:'0.4.4'
 
-* Ruby version
+・アプリの詳細な内容
+看護師国家試験の過去問題から、医療従事者や、それを志す人でなくとも解けそうな問題、あるいは知っておくと少し得する問題を抜粋。
+4択問題であり、正解を選択すると緑色に、不正解だと赤色に選択肢が色付けされ、解説も表示される。
+問題、選択肢は筆者による改変があり、また解説は全て筆者独自の解釈によるもの。
+最後には正解数が表示され、SNSとのシェアも可能。
+現状は不正解を選ぶと正解を知るには、解説を読むしかありません・・・
+またリトライするにはもう一度indexからアクセスする必要があります。
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+・どのように作成されたものか
+クイズ画面はJavascriptを使用していますが、ライブラリは使用していません。
+全て4択問題であり、正解の管理がしやすいよう、配列は全て一番最初の物を正解としています。
+実際のビューではフィッシャー・イェーツのシャッフルを使用することで、シャッフル表示がされます。
