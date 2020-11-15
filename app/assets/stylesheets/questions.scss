@@ -32,15 +32,14 @@ body {
 .quiz{
   border: solid 3px green;
   background-color: yellow;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  width:800px;
+  margin: 30px 0 60px 300px;
   padding-left: 60px;
   line-height: 60px;
 }
 
 .quiz__info{
   display:flex;
-  padding-left:320px;
 }
 
 .quiz__title {
