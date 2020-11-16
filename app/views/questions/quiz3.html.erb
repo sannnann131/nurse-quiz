@@ -1,2 +1,14 @@
 <%= javascript_include_tag 'quiz3.js' %>
 <%= render partial: 'questions/quiz' %>
+<body>
+  <section id="result" class="hidden">
+  <p></p>
+    <div class="sosyal">
+      <a href="http://www.facebook.com/share.php?u=https://nurse-quiz.herokuapp.com/"  class="facebook">Facebook</a>
+      <a href="https://twitter.com/share?url=https://nurse-quiz.herokuapp.com/" class="twitter">Twitter</a>
+      <a href="https://www.instagram.com/?hl=ja" class="instagram">Instagram</a>
+    <div class="explanation">
+      <%=link_to "正解と解説の一覧へ進む", explanation3_questions_path %>
+    </div>
+  </section>
+</body>
