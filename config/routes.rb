@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get 'quiz3'
       get 'quiz4'
       get 'quiz5'
+      get 'explanation1'
     end
   end
 end
