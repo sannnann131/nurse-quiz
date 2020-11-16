@@ -1,0 +1,21 @@
+.explantion__title {
+  font-size: 23px;
+  margin-top:15px;
+  margin-left: 550px;
+  text-align: center;
+}
+
+.explantion {
+  margin-top:20px;
+  text-align: center;
+  &__question {
+    font-size:20px;
+  }
+  &__answer {
+    margin-top:5px;
+  }
+  &__content {
+    margin-top:5px;
+    margin-bottom:20px;
+  }
+}
